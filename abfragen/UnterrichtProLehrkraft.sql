@@ -1,8 +1,20 @@
 ----	UnterrichtProLehrkraft.sql
 --
 -- Anzahl an Unterricht pro Lehrkraft, 
+--
 -- Absteigend sortiert, so dass die größte Zahl oben steht,
 -- bei gleicher Anzahl wird alphabetisch sortiert.
+-- Nur Lehrkräfte, die mehr als eine Stunde Unterricht haben.
+--
+-- Erwartetes Ergebnis:
+-- +-----------+--------+
+-- | lehrkraft | Anzahl |
+-- +-----------+--------+
+-- | TH        |      3 |
+-- | DS        |      2 |
+-- | KH        |      2 |
+-- | WZ        |      2 |
+-- +-----------+--------+
 
 -- Mit COUNT kann die Anzahl an Zeilen gezählt werden.
 -- Ohne Gruppierung wird nur das erste Ergebnis ausgegeben
@@ -28,7 +40,6 @@ FROM unterricht
 GROUP BY lehrkraft
 ORDER BY Anzahl DESC, lehrkraft;
 
-
 ---- Bedingungen bei solchen Abfragen
 -- Nur Lehrkräfte, die mehr als 1 Stunde unterrichten
 SELECT lehrkraft, COUNT(lehrkraft) AS 'Anzahl'
@@ -38,12 +49,22 @@ HAVING Anzahl > 1 -- Filtert das Ergebnis von GROUP BY
 ORDER BY Anzahl DESC, lehrkraft
 ;
 
+---- Weitere Beispiele
 -- Alle außer TH
 SELECT lehrkraft, COUNT(lehrkraft) AS 'Anzahl'
 FROM unterricht
 WHERE lehrkraft NOT IN ('TH') -- Filtert das Ergebnis von SELECT
 GROUP BY lehrkraft
 HAVING Anzahl > 1
+ORDER BY Anzahl DESC, lehrkraft
+;
+
+
+SELECT lehrkraft, COUNT(lehrkraft) AS 'Anzahl'
+FROM unterricht
+--WHERE lehrkraft NOT IN ('TH') -- Filtert das Ergebnis von SELECT
+GROUP BY lehrkraft
+HAVING lehrkraft NOT IN ('TH')
 ORDER BY Anzahl DESC, lehrkraft
 ;
 

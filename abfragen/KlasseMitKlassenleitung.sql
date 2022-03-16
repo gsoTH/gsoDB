@@ -1,6 +1,14 @@
----- MehrereTabellen.sql
----- Abfragen über mehrere Tabellen
--- Alle Klassen mit Name der Klassenleitung
+---- KlasseMitKlassenleitung.sql
+-- Alle Klassen mit Name der Klassenleitung.
+--
+-- Erwartetes Ergebnis:
+-- +---------+-----------+
+-- | kuerzel |   name    |
+-- +---------+-----------+
+-- | FI002   | Körperich |
+-- | FI007   | Thomas    |
+-- | FI014   | Maus      |
+-- +---------+-----------+
 
 
 -- Alle Zeilen aus allen Tabellen weden verknüpft.
