@@ -9,7 +9,7 @@ Um die Datenbank zu erstellen, muss das Skript [gsoDb_SQLite_erstellen.sql](http
 Für die Arbeit mit SQLite empfehle ich den [DB Browser for SQLite](https://sqlitebrowser.org/).
 
 
-## Videos
+## Videos :tv:
 Alle Skripte sind im Ordner [abfragen](https://github.com/gsoTH/gsoDB/tree/main/abfragen).
 
 ### Abfragen
