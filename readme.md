@@ -2,12 +2,15 @@
 Dieses Repository enthält eine Beispieldatenbank zur Erarbeitung von SQL-Kenntnissen.
 
 ## Vorbereitungen :rocket:
-Um die Datenbank zu erstellen, muss das Skript [gsoDb_SQLite_erstellen.sql](https://github.com/gsoTH/gsoDB/blob/main/gsoDb_SQLite_erstellen.sql) ausgeführt werden. 
+- Um die Datenbank zu erstellen, muss das Skript [gsoDb_SQLite_erstellen.sql](https://github.com/gsoTH/gsoDB/blob/main/gsoDb_SQLite_erstellen.sql) ausgeführt werden. 
+- Für die Arbeit mit SQLite empfehle ich den [DB Browser for SQLite](https://sqlitebrowser.org/).
+- Es gibt auch ein [SQL-Fiddle](http://sqlfiddle.com) in dem [exemplarische Abfragen](http://sqlfiddle.com/#!5/7a8ee/1/0) durchgeführt werden können. 
+- 
 
-Für die Arbeit mit SQLite empfehle ich den [DB Browser for SQLite](https://sqlitebrowser.org/).
 
-### Modellierung
+### Schema
 Das Modell des Schemas ist in der [Krähenfussnotation](https://web.microsoftstream.com/video/1e2429e0-e25f-4215-b57c-4eb640e2d6e3) dargestellt.
+
 ![Schema](gsoDb_Schema.drawio.png)
 
 ## Videos :tv:
