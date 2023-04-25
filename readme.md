@@ -8,7 +8,10 @@ Dieses Repository enthält eine Beispieldatenbank zur Erarbeitung von SQL-Kenntn
 
 
 ## Schema
-Das Modell des Schemas ist in der [Krähenfussnotation](https://de.wikipedia.org/wiki/Martin-Notation) dargestellt. [:tv: Erklärung](https://web.microsoftstream.com/video/1e2429e0-e25f-4215-b57c-4eb640e2d6e3)  [:page_with_curl:CREATE-Skript](https://github.com/gsoTH/gsoDB/blob/main/gsoDb_CREATE_Sqlite.sql)
+Das Schemas ist in der [Krähenfussnotation](https://de.wikipedia.org/wiki/Martin-Notation) dargestellt. 
+
+[:tv: Erklärung](https://web.microsoftstream.com/video/1e2429e0-e25f-4215-b57c-4eb640e2d6e3)
+[:page_with_curl:CREATE-Skript](https://github.com/gsoTH/gsoDB/blob/main/gsoDb_CREATE_Sqlite.sql)
 
 ![Schema](gsoDb_Schema.drawio.png)
 
